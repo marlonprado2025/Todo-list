@@ -10,7 +10,7 @@
 }
 
 body{
-background-image: url("./img/xicara-cafe-vermelha-uma-pessoa-escrevendo-em-um-caderno-foto.jpg");
+background-image: url("./img/xicara-cafe-vermelha-uma-pessoa-escrevendo-em-um-caderno-foto.jpg");/*imagem de fundo*/
 background-repeat: no-repeat;/*não repetir a imagem*/
 background-position: center;/*centralizar a imagem*/
 background-attachment: fixed;/*fixar a imagem*/
