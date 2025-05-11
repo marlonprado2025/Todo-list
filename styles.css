@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;/*para quando clicar no input, ficar com a borda*/
+}
+
+body{
+background-image: url("./img/xicara-cafe-vermelha-uma-pessoa-escrevendo-em-um-caderno-foto.jpg");
+background-repeat: no-repeat;/*não repetir a imagem*/
+background-position: center;/*centralizar a imagem*/
+background-attachment: fixed;/*fixar a imagem*/
+background-size: cover;/*tamanho da imagem, cobrir a tela*/
+}
+
+.container {
+    background-color: rgba(10, 11, 11, 0.493);
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 100px auto 0;
+    z-index: 5;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.611);
+}
+ .input-task{
+    border: none;
+    border-radius: 8px;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.button-add-task{
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    padding: 0 15px;
+    float: right;
+    cursor: pointer;
+    font-weight: 700;
+}
+/*quando passar o mouse em cima*/
+.button-add-task:hover{
+    opacity: 0.8;
+}
+/*quando clicar no botão*/
+.button-add-task:active{
+    opacity: 0.6;
+}
+.list-tasks{
+width: 100%;
+list-style: none;/*tira os pontos da lista*/
+margin-top: 30px;
+}
+
+.task{
+    background-color: rgb(243, 231, 60);
+    box-shadow: 1px 4px 10px rgba(240, 239, 239, 0.694);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+img{
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.task:hover img{
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.done{
+    background-color: rgb(26, 203, 41);
+    text-decoration: line-through;/*tacha o texto*/
+    color: rgb(255, 255, 255);
+}
+
+.alert {
+    background-color: #f03030;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    transition: opacity 0.5s ease-in-out;
+}
